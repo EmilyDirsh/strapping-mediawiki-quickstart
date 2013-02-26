@@ -1,1 +1,1 @@
-strapping-mediawiki/Strapping.php
+strapping/Strapping.php
