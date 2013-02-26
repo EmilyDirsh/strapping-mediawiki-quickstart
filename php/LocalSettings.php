@@ -104,6 +104,7 @@ $wgUpgradeKey = "57d030d808d53d45";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'standard', 'nostalgia', 'cologneblue', 'monobook', 'vector':
+require_once( "$IP/skins/strapping/strapping.php" );
 $wgDefaultSkin = "strapping";
 
 ## For attaching licensing metadata to pages, and displaying an
@@ -127,5 +128,4 @@ $wgResourceLoaderMaxQueryLength = -1;
 
 # End of automatically generated settings.
 # Add more configuration options below.
-
 $wgGroupPermissions['*']['edit'] = false;
