@@ -14,6 +14,12 @@ Quickstart
 $ rhc app create -a strapping -t php-5.3
 $ rhc cartridge add -a strapping -c mysql-5.1
 </pre>
+3. Clone your app repository:  
+`rhc app show` gives you information about your app, including the git url 
+<pre>
+$ rhc app show -a strapping
+$ git clone ssh://[uuid]@strapping-[namespace].rhcloud.com/~/git/strapping.git
+</pre>
 3. Add this upstream strapping-mediawiki repo
 <pre>
 $ cd strapping
@@ -25,7 +31,7 @@ $ git pull -s recursive -X theirs upstream master
 $ git push
 </pre>
 5. That's it, you can now checkout your application at:
-   `http://strapping-<your namespace>.rhcloud.com`
+   `http://strapping-[namespace].rhcloud.com`
 6. Default Admin Username: `Admin`  
    Default Password: `OpenShiftAdmin`
 
