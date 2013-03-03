@@ -71,7 +71,10 @@ deplist.txt
 -----------
 
 A list of pears to install, line by line on the server.  This will happen when
-the user git pushes.
+the user git pushes.  
+
+
+----------------------------------------------------------------------------------------------------------
 
 Strapping-Mediawiki
 ===================
