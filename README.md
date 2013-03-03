@@ -8,19 +8,19 @@ applications.  To use, just follow the quickstart below.
 Quickstart
 ----------
 
-1) Create an account at http://openshift.redhat.com/
-2) Create a php-5.3 application and attach mysql to it:
+1. Create an account at http://openshift.redhat.com/
+2. Create a php-5.3 application and attach mysql to it:
     $ rhc app create -a strapping -t php-5.3
     $ rhc cartridge add -a strapping -c mysql-5.1
-3) Add this upstream strapping-mediawiki repo
+3. Add this upstream strapping-mediawiki repo
     $ cd strapping
     $ git remote add upstream -m master git://github.com/EmilyDirsh/strapping-mediawiki-quickstart.git
     $ git pull -s recursive -X theirs upstream master
-4) Then push the repo upstream
+4. Then push the repo upstream
     $ git push
-5) That's it, you can now checkout your application at:
+5. That's it, you can now checkout your application at:
     http://strapping-<your namespace>.rhcloud.com
-6) Default Admin Username: Admin
+6. Default Admin Username: Admin
    Default Password: OpenShiftAdmin
 
 Updates
@@ -29,10 +29,10 @@ Updates
 In order to update or upgrade to the latest strapping-mediawiki-quickstart, you'll need to re-pull
 and re-push.
 
-1) Pull from upstream:
+1. Pull from upstream:
     $ cd strapping/
     $ git pull -s recursive -X theirs upstream master
-2) Push the new changes upstream
+2. Push the new changes upstream
     $ git push
 
 
