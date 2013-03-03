@@ -10,24 +10,22 @@ Quickstart
 
 1. Create an account at http://openshift.redhat.com/
 2. Create a php-5.3 application and attach mysql to it:
-```bash
+<pre>
 $ rhc app create -a strapping -t php-5.3
 $ rhc cartridge add -a strapping -c mysql-5.1
-```
+</pre>
 3. Add this upstream strapping-mediawiki repo
-```bash
+<pre>
 $ cd strapping
 $ git remote add upstream -m master git://github.com/EmilyDirsh/strapping-mediawiki-quickstart.git
 $ git pull -s recursive -X theirs upstream master
-```
+</pre>
 4. Then push the repo upstream
-```bash
+<pre>
 $ git push
-```
+</pre>
 5. That's it, you can now checkout your application at:
-```
-http://strapping-<your namespace>.rhcloud.com
-```
+   `http://strapping-<your namespace>.rhcloud.com`
 6. Default Admin Username: Admin
    Default Password: OpenShiftAdmin
 
