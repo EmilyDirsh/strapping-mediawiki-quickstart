@@ -26,8 +26,8 @@ $ git push
 </pre>
 5. That's it, you can now checkout your application at:
    `http://strapping-<your namespace>.rhcloud.com`
-6. Default Admin Username: Admin
-   Default Password: OpenShiftAdmin
+6. Default Admin Username: `Admin`  
+   Default Password: `OpenShiftAdmin`
 
 Updates
 -------
@@ -36,24 +36,24 @@ In order to update or upgrade to the latest strapping-mediawiki-quickstart, you'
 and re-push.
 
 1. Pull from upstream:
-```
+<pre>
 $ cd strapping/
 $ git pull -s recursive -X theirs upstream master
-```
+</pre>
 2. Push the new changes upstream
-```
+<pre>
 $ git push
-```
+</pre>
 
 Repo layout
 -----------
 
-`php/` - Externally exposed php code goes here
-`libs/` - Additional libraries
-`misc/` - For not-externally exposed php code
-`../data` - For persistent data
-`deplist.txt` - list of pears to install
-`.openshift/action_hooks/build` - Script that gets run every push, just prior to starting your app
+`php/` - Externally exposed php code goes here   
+`libs/` - Additional libraries   
+`misc/` - For not-externally exposed php code   
+`../data` - For persistent data   
+`deplist.txt` - list of pears to install   
+`.openshift/action_hooks/build` - Script that gets run every push, just prior to starting your app   
 
 
 Notes about layout
