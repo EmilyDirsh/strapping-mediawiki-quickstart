@@ -10,16 +10,24 @@ Quickstart
 
 1. Create an account at http://openshift.redhat.com/
 2. Create a php-5.3 application and attach mysql to it:
-    $ rhc app create -a strapping -t php-5.3
-    $ rhc cartridge add -a strapping -c mysql-5.1
+```bash
+$ rhc app create -a strapping -t php-5.3
+$ rhc cartridge add -a strapping -c mysql-5.1
+```
 3. Add this upstream strapping-mediawiki repo
-    $ cd strapping
-    $ git remote add upstream -m master git://github.com/EmilyDirsh/strapping-mediawiki-quickstart.git
-    $ git pull -s recursive -X theirs upstream master
+```bash
+$ cd strapping
+$ git remote add upstream -m master git://github.com/EmilyDirsh/strapping-mediawiki-quickstart.git
+$ git pull -s recursive -X theirs upstream master
+```
 4. Then push the repo upstream
-    $ git push
+```bash
+$ git push
+```
 5. That's it, you can now checkout your application at:
-    http://strapping-<your namespace>.rhcloud.com
+```
+http://strapping-<your namespace>.rhcloud.com
+```
 6. Default Admin Username: Admin
    Default Password: OpenShiftAdmin
 
@@ -30,11 +38,14 @@ In order to update or upgrade to the latest strapping-mediawiki-quickstart, you'
 and re-push.
 
 1. Pull from upstream:
-    $ cd strapping/
-    $ git pull -s recursive -X theirs upstream master
+```
+$ cd strapping/
+$ git pull -s recursive -X theirs upstream master
+```
 2. Push the new changes upstream
-    $ git push
-
+```
+$ git push
+```
 
 Repo layout
 -----------
@@ -145,14 +156,14 @@ It looks something like this:
 
 ```html
 <div class="row">
-	<div class="span6"></div>
-	<div class="span6"></div>
-		</div>
-		<div class="row">
-		<div class="span6 offset2"></div>
-			<div class="span3"></div>
-			<div class="span1"></div>
-				</div>
+  <div class="span6"></div>
+  <div class="span6"></div>
+</div>
+<div class="row">
+  <div class="span6 offset2"></div>
+  <div class="span3"></div>
+  <div class="span1"></div>
+</div>
 ```
 
 For more information,
